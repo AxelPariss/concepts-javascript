@@ -14,14 +14,14 @@ console.log(bar(10)); // Affiche 30
 ```
 ### 1. État de la stack
 | call stack |
--------
+|---|
 | `main()` |
 
 > Quand un script ce lance, il est **obligatoirement** executé dans la stack appelée _'main()'_.
 
 ### 2. État de la stack
 | call stack |
--------
+|---|
 | `console.log(bar(10))` |
 | `main()` |
 
@@ -29,7 +29,7 @@ console.log(bar(10)); // Affiche 30
 
 ### 3. État de la stack
 | call stack |
--------
+|---|
 | `bar(10)` |
 | `console.log(bar(10))` |
 | `main()` |
@@ -38,7 +38,7 @@ console.log(bar(10)); // Affiche 30
 
 ### 4. État de la stack
 | call stack |
--------
+|---|
 | `console.log(bar(10))` |
 | `main()` |
 
@@ -46,14 +46,14 @@ console.log(bar(10)); // Affiche 30
 
 ### 5. État de la stack
 | call stack |
--------
+|---|
 | `main()` |
 
 > Même principe qu'à l'étape 4 : `console.log(bar(10))` est executé, la fonction affiche le résultat retourné précédemment par la fonction `bar()`, **on sort donc de la stack de `console.log(bar(10))`**. La stack actuelle redevient `main()`
 
 ### 6. État de la stack
 | call stack |
--------
+|---|
 | | 
 
 > Le script a fini de s'executer en totalité, la stack `main()` disparait.
